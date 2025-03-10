@@ -7,7 +7,7 @@ import About from './pages/about/index.jsx'
 import Logement from './pages/logement/index.jsx'
 import Error from './components/Error/index.jsx'
 import Header from './components/Header/index.jsx'
-
+import Footer from './components/Footer/index.jsx'
 
 createRoot(document.getElementById('root')).render(
   <React.StrictMode>
@@ -19,6 +19,7 @@ createRoot(document.getElementById('root')).render(
                 <Route path="/logement" element={<Logement/>} />
                 <Route path="*" element={<Error />} />
             </Routes>
+            <Footer/>
                   </Router>
     </React.StrictMode>
 )

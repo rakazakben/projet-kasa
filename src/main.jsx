@@ -1,10 +1,25 @@
+import React from 'react'
 import { StrictMode } from 'react'
 import { createRoot } from 'react-dom/client'
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
 import './index.css'
-import App from './App.jsx'
+import Home from './pages/home/index.jsx'
+import About from './pages/about/index.jsx'
+import Logement from './pages/logement/index.jsx'
+import Error from './components/Error/index.jsx'
+import Header from './components/Header/index.jsx'
+
 
 createRoot(document.getElementById('root')).render(
-  <StrictMode>
-    <App />
-  </StrictMode>,
+  <React.StrictMode>
+        <Router>
+          <Header/>
+            <Routes>
+                <Route path="/" element={<Home />} />
+                <Route path="/about" element={<About/>} />
+                <Route path="/logement" element={<Logement/>} />
+                <Route path="*" element={<Error />} />
+            </Routes>
+                  </Router>
+    </React.StrictMode>
 )

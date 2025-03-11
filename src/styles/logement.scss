@@ -8,14 +8,31 @@
         width: 100%;
         border-radius: 25px;
     }
-
+    .overlay {
+        height: 340px;
+        border-radius: 25px;
+        box-sizing: border-box;
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background: linear-gradient(
+          180deg,
+          rgba(255, 255, 255, 0) 0%,
+          rgba(10, 10, 10, 0) 42%,
+          rgba(4, 4, 4, 0.205) 99.99%,
+          rgba(0, 0, 0, 0.5) 100%
+        );
+        z-index: 1; 
+      }
     .logement-text{
         width: 50%;
         font-family: "Montserrat";
         position: absolute;
         color: white;
         font-weight: bold;
-        z-index: 1;
+        z-index: 2;
         font-size: 1em;
         bottom: 10px; /* Ajuste la distance par rapport au bas de l'image */
         left: 5%;

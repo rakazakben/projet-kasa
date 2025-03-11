@@ -6,6 +6,7 @@ function Logement({id, title, cover}){
         <li key={id} className="logement">
             <Link to={`/logement/${id}`}>
             <img src={cover} alt={title} className="logement-cover"/>
+            <div className='overlay'></div>
             <h2 className="logement-text">{title}</h2>
             </Link>    
         </li>

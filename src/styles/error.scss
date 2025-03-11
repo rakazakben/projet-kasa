@@ -1,0 +1,27 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap");
+
+.error404{
+    margin:70px;
+    display: flex;
+    flex-direction: column;
+    font-family: "Montserrat";
+    color: #FF6060;
+    align-items: center;
+    gap: 50px;
+    .error-title{
+        font-size: 12em;
+        font-weight: 700;
+        margin:0;
+        
+    }
+    .error-text{
+        font-size: 1.7em;
+        font-weight: 500;
+
+    }
+    .link{
+        font-size: 1em;
+        text-decoration: underline;
+        color: black;
+    }
+}

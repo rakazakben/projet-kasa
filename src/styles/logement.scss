@@ -1,0 +1,24 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap");
+.logement{
+    position: relative;
+
+    .logement-cover{
+        object-fit: cover;
+        height: 100%;
+        width: 100%;
+        border-radius: 25px;
+    }
+
+    .logement-text{
+        width: 50%;
+        font-family: "Montserrat";
+        position: absolute;
+        color: white;
+        font-weight: bold;
+        z-index: 1;
+        font-size: 1em;
+        bottom: 10px; /* Ajuste la distance par rapport au bas de l'image */
+        left: 5%;
+        text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+    }
+}

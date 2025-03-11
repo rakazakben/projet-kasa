@@ -1,5 +1,5 @@
 import { Link } from 'react-router-dom'
-import "../../styles/logement.scss"
+import "../../styles/logement-item.scss"
 
 function Logement({id, title, cover}){
     return(

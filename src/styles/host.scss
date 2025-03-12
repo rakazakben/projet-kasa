@@ -1,0 +1,17 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap");
+
+.host{
+    display:flex;
+    margin-top:15px;
+    gap:10px;
+    .host-cover{
+        object-fit: cover;
+        border-radius: 50%;
+        height: 64px;
+    }
+    .host-name{
+        font-family: "Montserrat";
+        color:#FF6060;
+        font-size: 1.2em;
+    }
+}

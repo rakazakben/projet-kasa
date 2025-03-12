@@ -20,6 +20,9 @@ function Description(){
                 <Tags/>
                 <Notes rating={Number(logement.rating)}/>
             </div>
+            <div className="menus">
+                
+            </div>
 
         </div>
     )

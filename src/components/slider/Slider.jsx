@@ -27,9 +27,11 @@ function Slider() {
     return (
         <div className="slide-container">
           <img src={logement.pictures[currentIndex]} alt="" className="image-logement"/>
-          <img src={backArrow} className="arrow back" onClick={prevImage}/>
-          <img src={nextArrow} className="arrow next" onClick={nextImage}/>
-          <p className="index">{currentIndex + 1}/{logement.pictures.length}</p>
+          {logement.pictures.length > 1 ? <img src={backArrow} className="arrow back" onClick={prevImage}/> : ""}
+          {logement.pictures.length > 1 ? <img src={nextArrow} className="arrow next" onClick={nextImage}/> : ""}
+          {logement.pictures.length > 1 ? <p className="index">{currentIndex + 1}/{logement.pictures.length}</p> : ""}
+          
+          
         </div>
     )
   }

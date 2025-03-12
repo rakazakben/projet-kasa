@@ -12,16 +12,14 @@ function Description(){
     const logement = logements.find((logement) => logement.id === id)
     return(
         <div className="logement-description">
-            <div className="titre-hote">
+            <div className="titre-tags">
                 <TitreLogement/>
-                <Hote/>
-            </div>
-            <div className="tags-and-notes">
                 <Tags/>
-                <Notes rating={Number(logement.rating)}/>
-            </div>
-            <div className="menus">
                 
+            </div>
+            <div className="hote-notes">
+                <Hote/>
+                <Notes rating={Number(logement.rating)}/>
             </div>
 
         </div>

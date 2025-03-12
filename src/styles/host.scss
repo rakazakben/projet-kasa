@@ -3,6 +3,7 @@
 .host{
     display:flex;
     margin-top:15px;
+    margin-bottom:15px;
     gap:10px;
     .host-cover{
         object-fit: cover;
@@ -16,3 +17,14 @@
         font-weight: 500;
     }
 }
+@media (max-width: 767.98px){
+    .host{
+        align-items: center;
+        .host-name {
+            font-size: 1rem;
+        }
+        .host-cover{
+            height: 32px;
+        }
+    }
+  }

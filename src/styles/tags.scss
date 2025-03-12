@@ -2,6 +2,7 @@
 
 .tag-list{
     display: flex;
+    align-items: center;
     gap: 15px;
     list-style-type: none;
     margin: 0px;
@@ -11,6 +12,7 @@
         align-items: center; 
         justify-content: center; 
         padding: 4px 30px 4px 30px;
+        height: fit-content;
         border-radius: 10px;
         font-weight: 700;
         background-color: $primary-color;

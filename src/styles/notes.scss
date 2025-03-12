@@ -1,0 +1,17 @@
+@import "./common.scss";
+.note{
+    display: flex;
+    gap: 5px; // Espacement entre les étoiles
+    margin: 10px 0;
+}
+.star {
+    font-size: 1.5rem;
+  
+    &.filled {
+      color: $primary-color; 
+    }
+  
+    &.empty {
+      color: #ccc; // Couleur des étoiles vides
+    }
+  }

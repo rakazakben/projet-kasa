@@ -2,6 +2,7 @@ import logements from "../../data/logements.json"
 import { useParams } from "react-router-dom"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faStar } from "@fortawesome/free-solid-svg-icons";
+import "../../styles/notes.scss"
 
 function Notes({rating}){
    /* const {id} = useParams()

@@ -8,7 +8,18 @@ body{
 
 }
 .body{
+    margin-top: 30px;
     margin-left: 200px;
     margin-right:200px;
 }
 
+@media (max-width: 767.98px){
+    body{
+        margin: 0px;
+    }
+    .body{
+        margin-top: 30px;
+        margin-left: 10px;
+        margin-right:10px;
+    }
+}

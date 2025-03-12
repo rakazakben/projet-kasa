@@ -9,9 +9,6 @@ function Slider() {
   const {id} = useParams()
   console.log(id)
   const logement = logements.find((logement) => logement.id === id)
-  if (!logement) {
-    return <h2>Logement non trouvé</h2>;
-  }
   const [currentIndex, setCurrentIndex] = useState(0); // Stocke l'index de l'image actuelle
 
   // Fonction pour aller à l'image suivante

@@ -1,10 +1,11 @@
+@import "./common";
 .galerie{
     list-style-type: none;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     grid-column-gap: 20px;
     grid-row-gap: 20px;
-    background-color: #F6F6F6;
+    background-color: $secondary-color;
     margin: 30px 0px 30px 0px;
     border-radius: 25px;
     padding: 40px;

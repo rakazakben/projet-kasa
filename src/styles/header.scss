@@ -1,7 +1,6 @@
-@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap");
+@import "./common";
+
 .header{
-    margin-left: 100px;
-    margin-right: 100px;
     margin-bottom: 30px;
     display: flex;
     justify-content: space-between;
@@ -11,7 +10,6 @@ nav{
     display: flex;
     gap: 15px;
     .link{
-        font-family: "Montserrat";
         font-weight: 500;
         font-size: 1.4em;
         color: black;

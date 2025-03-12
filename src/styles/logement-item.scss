@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap");
+@import "./common";
 .logement{
     position: relative;
 
@@ -28,7 +28,6 @@
       }
     .logement-text{
         width: 50%;
-        font-family: "Montserrat";
         position: absolute;
         color: white;
         font-weight: bold;

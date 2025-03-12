@@ -1,5 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap");
-
+@import "./common";
 .host{
     display:flex;
     margin-top:15px;
@@ -10,8 +10,8 @@
         height: 64px;
     }
     .host-name{
-        font-family: "Montserrat";
-        color:#FF6060;
+        
+        color: $primary-color;
         font-size: 1.2em;
     }
 }

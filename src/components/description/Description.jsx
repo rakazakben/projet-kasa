@@ -4,6 +4,7 @@ import "../../styles/description.scss"
 import Hote from "./hote"
 import Tags from "./Tags"
 import TitreLogement from "./titre"
+import Notes from "./Notes"
 
 function Description(){
     const {id} = useParams()
@@ -17,6 +18,7 @@ function Description(){
             </div>
             <div className="tags-and-notes">
                 <Tags/>
+                <Notes rating={Number(logement.rating)}/>
             </div>
 
         </div>

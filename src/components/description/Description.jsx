@@ -2,6 +2,8 @@ import logements from "../../data/logements.json"
 import { useParams } from "react-router-dom"
 import "../../styles/description.scss"
 import Hote from "./hote"
+import Tags from "./Tags"
+import TitreLogement from "./titre"
 
 function Description(){
     const {id} = useParams()
@@ -9,12 +11,13 @@ function Description(){
     const logement = logements.find((logement) => logement.id === id)
     return(
         <div className="logement-description">
-            <div>
-                <h2 className="titre-logement">{logement.title}</h2>
-                <p>{logement.location}</p>
+            <div className="titre-hote">
+                <TitreLogement/>
+                <Hote/>
             </div>
-            <Hote/>
-            
+            <div className="tags-and-notes">
+                <Tags/>
+            </div>
 
         </div>
     )

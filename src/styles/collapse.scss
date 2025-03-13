@@ -4,13 +4,17 @@
     width: 100%;
     margin: 10px auto;
     border: none;
-    border-radius: 5px;
+    border-radius: 10px;
     overflow: hidden;
-    background-color: $secondary-color;
-
+    background-color: white;
+    margin-bottom: 50px;
+    &.open {
+        background-color: $secondary-color;
+      }
     .collapse-button{
         width: 100%;
         padding: 10px;
+        border-radius: 10px;
         font-size: 1.2rem;
         font-weight: bold;
         background-color: $primary-color;
@@ -30,32 +34,32 @@
             transform: rotate(180deg); // Pivote la flèche lorsqu'on ouvre le menu
           }  
     }
-
+    .collapse-content {
+        max-height: 0;
+        overflow: hidden;
+        transition: max-height 0.4s ease-in-out, opacity 0.3s ease-in-out;
+        opacity: 0;
+        padding: 0 10px;
+      
+        &.open {
+          max-height: 200px; 
+          opacity: 1;
+          padding: 10px;
+        }
+        .collapse-list {
+            list-style: none;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            gap: 5px;
+          }
+        
+          .collapse-item {
+            padding: 5px;
+            background-color: #f8f8f8;
+            border-radius: 5px;
+            border: none;
+          }
+      }
 
 }
-.collapse-content {
-    max-height: 0;
-    overflow: hidden;
-    transition: max-height 0.4s ease-in-out, opacity 0.3s ease-in-out;
-    opacity: 0;
-    padding: 0 10px;
-  
-    &.open {
-      max-height: 200px; 
-      opacity: 1;
-      padding: 10px;
-    }
-    .collapse-list {
-        list-style: none;
-        padding: 0;
-        display: flex;
-        flex-direction: column;
-        gap: 5px;
-      }
-    
-      .collapse-item {
-        padding: 5px;
-        background-color: #f8f8f8;
-        border-radius: 5px;
-      }
-  }

@@ -9,7 +9,7 @@ function Collapse({titre, contenu}){
     setIsOpen(!isOpen);
     };
     return(
-        <div className="collapse">
+        <div className={`collapse ${isOpen ? "open" : ""}`}>
             <button className="collapse-button" onClick={toggleOpen}>
                 {titre}
                 <img src={arrowIcon} alt="Flèche" className={`arrow ${isOpen ? "open" : ""}`} />

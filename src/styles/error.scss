@@ -25,3 +25,18 @@
         color: black;
     }
 }
+@media (max-width: 767.98px){
+    .error404{
+        margin:150px 20px 150px 20px;
+        .error-title{
+            font-size: 6em;
+            
+        }
+        .error-text{
+            text-align: center;
+            font-size: 1.3em;
+            font-weight: 500;
+    
+        }
+    }
+}

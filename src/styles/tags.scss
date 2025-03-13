@@ -23,5 +23,8 @@
 @media (max-width: 767.98px){
     .tag-list{
         flex-wrap: wrap;
+        .tag{
+            font-size: 0.9em;
+        }
     }
 }

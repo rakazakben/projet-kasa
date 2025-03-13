@@ -7,7 +7,6 @@ import nextArrow from "../../assets/arrow_next.svg"
 
 function Slider() {
   const {id} = useParams()
-  console.log(id)
   const logement = logements.find((logement) => logement.id === id)
   const [currentIndex, setCurrentIndex] = useState(0); // Stocke l'index de l'image actuelle
 

@@ -4,7 +4,6 @@ import "../../styles/tags.scss"
 
 function Tags(){
     const {id} = useParams()
-    console.log(id)
     const logement = logements.find((logement) => logement.id === id)
 
     return(

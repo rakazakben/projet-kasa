@@ -4,7 +4,6 @@ import "../../styles/host.scss"
 
 function Hote(){
     const {id} = useParams()
-    console.log(id)
     const logement = logements.find((logement) => logement.id === id)
 
     return(

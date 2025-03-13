@@ -7,7 +7,6 @@ import Error from "../../components/Error"
 
 function Logement() {
   const {id} = useParams()
-  console.log(id)
   const logement = logements.find((logement) => logement.id === id)
   if (!logement) {
     return <Error/>

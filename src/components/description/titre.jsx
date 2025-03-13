@@ -4,7 +4,6 @@ import "../../styles/description.scss"
 
 function TitreLogement(){
     const {id} = useParams()
-    console.log(id)
     const logement = logements.find((logement) => logement.id === id)
     return(
         <div>

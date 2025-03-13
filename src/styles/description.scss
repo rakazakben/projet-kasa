@@ -33,7 +33,10 @@
         margin-bottom: 20px;
     }
 }
-
+.collapses{
+    display: flex;
+    gap: 60px;
+}
 @media (max-width: 767.98px){
     .logement-description{
         flex-direction: column;
@@ -45,7 +48,7 @@
             .titre-logement{
                 font-size: 1.3em;
             }
-            
+
         }
     }
 }

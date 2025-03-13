@@ -7,7 +7,6 @@
     border-radius: 10px;
     overflow: hidden;
     background-color: white;
-    margin-bottom: 50px;
     &.open {
         background-color: $secondary-color;
       }
@@ -15,7 +14,7 @@
         width: 100%;
         padding: 10px;
         border-radius: 10px;
-        font-size: 1.2rem;
+        font-size: 1.6rem;
         font-weight: bold;
         background-color: $primary-color;
         color: white;
@@ -40,9 +39,10 @@
         transition: max-height 0.4s ease-in-out, opacity 0.3s ease-in-out;
         opacity: 0;
         padding: 0 10px;
+        font-size: 1.4em;
       
         &.open {
-          max-height: 200px; 
+          max-height: 400px; 
           opacity: 1;
           padding: 10px;
         }
@@ -63,3 +63,18 @@
       }
 
 }
+
+@media (max-width: 767.98px){
+
+  .collapse{
+
+    .collapse-button{
+      font-size: 1.0rem;
+    }
+    .collapse-content {
+      font-size: 0.9em;
+    }
+  }
+
+}
+

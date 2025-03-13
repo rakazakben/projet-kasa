@@ -19,3 +19,8 @@
         color: white;
     }
 }
+@media (max-width: 767.98px){
+    .tag-list{
+        flex-wrap: wrap;
+    }
+}

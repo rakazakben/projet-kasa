@@ -19,7 +19,7 @@ createRoot(document.getElementById('root')).render(
                 <Route path="/logement/:id" element={<Logement/>} />
                 <Route path="*" element={<Error />} />
             </Routes>
-            <Footer/>
-                  </Router>
-    </React.StrictMode>
+          <Footer/>
+        </Router>
+  </React.StrictMode>
 )

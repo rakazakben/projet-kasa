@@ -25,7 +25,7 @@ function Description(){
         </div>
         <div className="collapses">
             <Collapse titre="Description" contenu={logement.description}/>
-            <Collapse titre="Equipements" contenu={logement.equipments}/>
+            <Collapse titre="Équipements" contenu={logement.equipments}/>
         </div>
     </div>
         

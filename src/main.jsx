@@ -1,7 +1,7 @@
 import React from 'react'
 import { StrictMode } from 'react'
 import { createRoot } from 'react-dom/client'
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
+import { HashRouter as Router, Routes, Route } from 'react-router-dom'
 import Home from './pages/home/index.jsx'
 import About from './pages/about/index.jsx'
 import Logement from './pages/logement/index.jsx'

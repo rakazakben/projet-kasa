@@ -8,8 +8,7 @@ function Galerie(){
         <div>
             <ul className='galerie'>
 			{logementList.map(({id, title, cover})=> (
-				<Logement key={id} id={id} title={title} cover={cover}
-			/>))}
+				<Logement key={id} id={id} title={title} cover={cover}/>))}
 		    </ul>
         </div>
     )
